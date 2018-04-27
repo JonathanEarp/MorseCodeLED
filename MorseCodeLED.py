@@ -19,8 +19,8 @@ try:
         sentence = sentence.lower() # converts input to lowercase
         n = len(sentence)
         i = 0
-        for i in sentence[i]:
-            if sentence[i] = "a":
+        for letter in sentence:
+            if sentence[i] == "a":
                 GPIO.output(led_pin, True) #dot
                 time.sleep(0.2)
                 GPIO.output(led_pin, False)
@@ -29,7 +29,7 @@ try:
                 time.sleep(0.6) 
                 GPIO.output(led_pin, False)
                 time.sleep(0.6)
-            elif sentence[i] = "b":
+            elif sentence[i] == "b":
                 GPIO.output(led_pin, True) #dash
                 time.sleep(0.6)
                 GPIO.output(led_pin, False)
@@ -46,7 +46,7 @@ try:
                 time.sleep(0.2) 
                 GPIO.output(led_pin, False)
                 time.sleep(0.6)
-             elif sentence[i] = "c":
+             elif sentence[i] == "c":
                 GPIO.output(led_pin, True) #dash
                 time.sleep(0.6)
                 GPIO.output(led_pin, False)
@@ -63,7 +63,7 @@ try:
                 time.sleep(0.2) 
                 GPIO.output(led_pin, False)
                 time.sleep(0.6)
-             elif sentence[i] = "d":
+             elif sentence[i] == "d":
                 GPIO.output(led_pin, True) #dash
                 time.sleep(0.6)
                 GPIO.output(led_pin, False)
@@ -76,18 +76,31 @@ try:
                 time.sleep(0.2) 
                 GPIO.output(led_pin, False)
                 time.sleep(0.6)
-             elif sentence[i] = "e":
+             elif sentence[i] == "e":
                 GPIO.output(led_pin, True) #dot
                 time.sleep(0.2)
                 GPIO.output(led_pin, False)
                 time.sleep(0.6)
-             elif sentence[i] = "f":
+             elif sentence[i] == "f":
                 GPIO.output(led_pin, True) #dot
                 time.sleep(0.2)
                 GPIO.output(led_pin, False)
                 time.sleep(0.2)
                 GPIO.output(led_pin, True) #dot
                 time.sleep(0.2) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dot
+                time.sleep(0.2) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.6)
+             elif sentence[i] == "g":
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6)
                 GPIO.output(led_pin, False)
                 time.sleep(0.2)
                 GPIO.output(led_pin, True) #dash
@@ -98,20 +111,7 @@ try:
                 time.sleep(0.2) 
                 GPIO.output(led_pin, False)
                 time.sleep(0.6)
-             elif sentence[i] = "g":
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6)
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dot
-                time.sleep(0.2) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.6)
-             elif sentence[i] = "h":
+             elif sentence[i] == "h":
                 GPIO.output(led_pin, True) #dot
                 time.sleep(0.2)
                 GPIO.output(led_pin, False)
@@ -128,7 +128,7 @@ try:
                 time.sleep(0.2) 
                 GPIO.output(led_pin, False)
                 time.sleep(0.6)
-             elif sentence[i] = "i":
+             elif sentence[i] == "i":
                 GPIO.output(led_pin, True) #dot
                 time.sleep(0.2)
                 GPIO.output(led_pin, False)
@@ -137,85 +137,7 @@ try:
                 time.sleep(0.2) 
                 GPIO.output(led_pin, False)
                 time.sleep(0.6)
-             elif sentence[i] = "j":
-                GPIO.output(led_pin, True) #dot
-                time.sleep(0.2)
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.6)
-             elif sentence[i] = "k":
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6)
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dot
-                time.sleep(0.2) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.6)
-             elif sentence[i] = "l":
-                GPIO.output(led_pin, True) #dot
-                time.sleep(0.2)
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dot
-                time.sleep(0.2) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dot
-                time.sleep(0.2) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.6)
-             elif sentence[i] = "m":
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6)
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.6)
-             elif sentence[i] = "n":
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6)
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dot
-                time.sleep(0.2) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.6)
-             elif sentence[i] = "o":
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6)
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.6)
-             elif sentence[i] = "p":
+             elif sentence[i] == "j":
                 GPIO.output(led_pin, True) #dot
                 time.sleep(0.2)
                 GPIO.output(led_pin, False)
@@ -228,119 +150,11 @@ try:
                 time.sleep(0.6) 
                 GPIO.output(led_pin, False)
                 time.sleep(0.2)
-                GPIO.output(led_pin, True) #dot
-                time.sleep(0.2) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.6)
-             elif sentence[i] = "q":
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6)
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dot
-                time.sleep(0.2) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
                 GPIO.output(led_pin, True) #dash
                 time.sleep(0.6) 
                 GPIO.output(led_pin, False)
                 time.sleep(0.6)
-             elif sentence[i] = "r":
-                GPIO.output(led_pin, True) #dot
-                time.sleep(0.2)
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dot
-                time.sleep(0.2) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.6)
-             elif sentence[i] = "s":
-                GPIO.output(led_pin, True) #dot
-                time.sleep(0.2)
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dot
-                time.sleep(0.2) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dot
-                time.sleep(0.2) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.6)
-             elif sentence[i] = "t":
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6)
-                GPIO.output(led_pin, False)
-                time.sleep(0.6)
-             elif sentence[i] = "u":
-                GPIO.output(led_pin, True) #dot
-                time.sleep(0.2)
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dot
-                time.sleep(0.2) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.6)
-             elif sentence[i] = "v":
-                GPIO.output(led_pin, True) #dot
-                time.sleep(0.2)
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dot
-                time.sleep(0.2) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dot
-                time.sleep(0.2) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.6)
-             elif sentence[i] = "w":
-                GPIO.output(led_pin, True) #dot
-                time.sleep(0.2)
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.6)
-             elif sentence[i] = "x":
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6)
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dot
-                time.sleep(0.2) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dot
-                time.sleep(0.2) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.6)
-             elif sentence[i] = "y":
+             elif sentence[i] == "k":
                 GPIO.output(led_pin, True) #dash
                 time.sleep(0.6)
                 GPIO.output(led_pin, False)
@@ -352,14 +166,10 @@ try:
                 GPIO.output(led_pin, True) #dash
                 time.sleep(0.6) 
                 GPIO.output(led_pin, False)
+                time.sleep(0.6)
+             elif sentence[i] == "l":
+                GPIO.output(led_pin, True) #dot
                 time.sleep(0.2)
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.6)
-             elif sentence[i] = "z":
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6)
                 GPIO.output(led_pin, False)
                 time.sleep(0.2)
                 GPIO.output(led_pin, True) #dash
@@ -374,7 +184,197 @@ try:
                 time.sleep(0.2) 
                 GPIO.output(led_pin, False)
                 time.sleep(0.6)
-             elif sentence[i] = ".":
+             elif sentence[i] == "m":
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6)
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.6)
+             elif sentence[i] == "n":
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6)
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dot
+                time.sleep(0.2) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.6)
+             elif sentence[i] == "o":
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6)
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.6)
+             elif sentence[i] == "p":
+                GPIO.output(led_pin, True) #dot
+                time.sleep(0.2)
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dot
+                time.sleep(0.2) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.6)
+             elif sentence[i] == "q":
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6)
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dot
+                time.sleep(0.2) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.6)
+             elif sentence[i] == "r":
+                GPIO.output(led_pin, True) #dot
+                time.sleep(0.2)
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dot
+                time.sleep(0.2) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.6)
+             elif sentence[i] == "s":
+                GPIO.output(led_pin, True) #dot
+                time.sleep(0.2)
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dot
+                time.sleep(0.2) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dot
+                time.sleep(0.2) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.6)
+             elif sentence[i] == "t":
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6)
+                GPIO.output(led_pin, False)
+                time.sleep(0.6)
+             elif sentence[i] == "u":
+                GPIO.output(led_pin, True) #dot
+                time.sleep(0.2)
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dot
+                time.sleep(0.2) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.6)
+             elif sentence[i] == "v":
+                GPIO.output(led_pin, True) #dot
+                time.sleep(0.2)
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dot
+                time.sleep(0.2) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dot
+                time.sleep(0.2) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.6)
+             elif sentence[i] == "w":
+                GPIO.output(led_pin, True) #dot
+                time.sleep(0.2)
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.6)
+             elif sentence[i] == "x":
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6)
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dot
+                time.sleep(0.2) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dot
+                time.sleep(0.2) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.6)
+             elif sentence[i] == "y":
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6)
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dot
+                time.sleep(0.2) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.6)
+             elif sentence[i] == "z":
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6)
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dot
+                time.sleep(0.2) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dot
+                time.sleep(0.2) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.6)
+             elif sentence[i] == ".":
                 GPIO.output(led_pin, True) #dot
                 time.sleep(0.2)
                 GPIO.output(led_pin, False)
@@ -399,7 +399,7 @@ try:
                 time.sleep(0.6) 
                 GPIO.output(led_pin, False)
                 time.sleep(0.6)
-              elif sentence[i] = ",":
+              elif sentence[i] == ",":
                  GPIO.output(led_pin, True) #dash
                 time.sleep(0.6)
                 GPIO.output(led_pin, False)
@@ -424,7 +424,7 @@ try:
                 time.sleep(0.6) 
                 GPIO.output(led_pin, False)
                 time.sleep(0.6)
-              elif sentence[i] = "?":
+              elif sentence[i] == "?":
                  GPIO.output(led_pin, True) #dot
                 time.sleep(0.2)
                 GPIO.output(led_pin, False)
@@ -449,7 +449,7 @@ try:
                 time.sleep(0.2) 
                 GPIO.output(led_pin, False)
                 time.sleep(0.6)
-              elif sentence[i] = "/":
+              elif sentence[i] == "/":
                 GPIO.output(led_pin, True) #dash
                 time.sleep(0.6)
                 GPIO.output(led_pin, False)
@@ -470,7 +470,7 @@ try:
                 time.sleep(0.2) 
                 GPIO.output(led_pin, False)
                 time.sleep(0.6)
-              elif sentence[i] = "@":
+              elif sentence[i] == "@":
                 GPIO.output(led_pin, True) #dot
                 time.sleep(0.2)
                 GPIO.output(led_pin, False)
@@ -495,7 +495,7 @@ try:
                 time.sleep(0.2) 
                 GPIO.output(led_pin, False)
                 time.sleep(0.6)
-             elif sentence[i] = "1":
+             elif sentence[i] == "1":
                 GPIO.output(led_pin, True) #dot
                 time.sleep(0.2)
                 GPIO.output(led_pin, False)
@@ -516,7 +516,7 @@ try:
                 time.sleep(0.6) 
                 GPIO.output(led_pin, False)
                 time.sleep(0.6)
-             elif sentence[i] = "2":
+             elif sentence[i] == "2":
                 GPIO.output(led_pin, True) #dot
                 time.sleep(0.2)
                 GPIO.output(led_pin, False)
@@ -537,7 +537,7 @@ try:
                 time.sleep(0.6) 
                 GPIO.output(led_pin, False)
                 time.sleep(0.6)
-             elif sentence[i] = "3":
+             elif sentence[i] == "3":
                 GPIO.output(led_pin, True) #dot
                 time.sleep(0.2)
                 GPIO.output(led_pin, False)
@@ -558,7 +558,7 @@ try:
                 time.sleep(0.6) 
                 GPIO.output(led_pin, False)
                 time.sleep(0.6)
-             elif sentence[i] = "4":
+             elif sentence[i] == "4":
                 GPIO.output(led_pin, True) #dot
                 time.sleep(0.2)
                 GPIO.output(led_pin, False)
@@ -579,7 +579,7 @@ try:
                 time.sleep(0.6) 
                 GPIO.output(led_pin, False)
                 time.sleep(0.6)
-             elif sentence[i] = "5":
+             elif sentence[i] == "5":
                 GPIO.output(led_pin, True) #dot
                 time.sleep(0.2)
                 GPIO.output(led_pin, False)
@@ -600,7 +600,7 @@ try:
                 time.sleep(0.2) 
                 GPIO.output(led_pin, False)
                 time.sleep(0.6)
-            elif sentence[i] = "6":
+            elif sentence[i] == "6":
                 GPIO.output(led_pin, True) #dash
                 time.sleep(0.6)
                 GPIO.output(led_pin, False)
@@ -621,28 +621,7 @@ try:
                 time.sleep(0.2) 
                 GPIO.output(led_pin, False)
                 time.sleep(0.6)
-            elif sentence[i] = "7":
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6)
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dot
-                time.sleep(0.2) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dot
-                time.sleep(0.2) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dot
-                time.sleep(0.2) 
-                GPIO.output(led_pin, False)
-                time.sleep(0.6)
-            elif sentence[i] = "8":
+            elif sentence[i] == "7":
                 GPIO.output(led_pin, True) #dash
                 time.sleep(0.6)
                 GPIO.output(led_pin, False)
@@ -651,8 +630,8 @@ try:
                 time.sleep(0.6) 
                 GPIO.output(led_pin, False)
                 time.sleep(0.2)
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6) 
+                GPIO.output(led_pin, True) #dot
+                time.sleep(0.2) 
                 GPIO.output(led_pin, False)
                 time.sleep(0.2)
                 GPIO.output(led_pin, True) #dot
@@ -663,13 +642,9 @@ try:
                 time.sleep(0.2) 
                 GPIO.output(led_pin, False)
                 time.sleep(0.6)
-            elif sentence[i] = "9":
+            elif sentence[i] == "8":
                 GPIO.output(led_pin, True) #dash
                 time.sleep(0.6)
-                GPIO.output(led_pin, False)
-                time.sleep(0.2)
-                GPIO.output(led_pin, True) #dash
-                time.sleep(0.6) 
                 GPIO.output(led_pin, False)
                 time.sleep(0.2)
                 GPIO.output(led_pin, True) #dash
@@ -683,8 +658,12 @@ try:
                 GPIO.output(led_pin, True) #dot
                 time.sleep(0.2) 
                 GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dot
+                time.sleep(0.2) 
+                GPIO.output(led_pin, False)
                 time.sleep(0.6)
-            elif sentence[i] = "0":
+            elif sentence[i] == "9":
                 GPIO.output(led_pin, True) #dash
                 time.sleep(0.6)
                 GPIO.output(led_pin, False)
@@ -701,17 +680,38 @@ try:
                 time.sleep(0.6) 
                 GPIO.output(led_pin, False)
                 time.sleep(0.2)
+                GPIO.output(led_pin, True) #dot
+                time.sleep(0.2) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.6)
+            elif sentence[i] == "0":
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6)
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
+                GPIO.output(led_pin, True) #dash
+                time.sleep(0.6) 
+                GPIO.output(led_pin, False)
+                time.sleep(0.2)
                 GPIO.output(led_pin, True) #dash
                 time.sleep(0.6) 
                 GPIO.output(led_pin, False)
                 time.sleep(0.6)
-            elif sentence[i] = "'":
+            elif sentence[i] == "'":
                 continue
-            elif sentence[i] = " ":
+            elif sentence[i] == " ":
                 GPIO.output(led_pin, False)
                 time.sleep(0.8)
             i += 1
-            if i > n:
+            if i >= n + 1:
                 break
 finally:
     print("cleaning up")
