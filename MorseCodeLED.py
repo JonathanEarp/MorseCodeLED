@@ -1,4 +1,4 @@
-import RPi.GPIO as GPIO
+import RPi.GPIO as GPIO #adds Raspberry pi GPIO library (may need to install this on pi)
 import time
 
 #Morse Code Rules
